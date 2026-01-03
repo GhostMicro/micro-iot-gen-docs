@@ -1,0 +1,72 @@
+:root {
+    --md-primary-fg-color: #06b6d4;
+    /* Cyan-500 */
+    --md-primary-bg-color: #000000;
+    --md-accent-fg-color: #a855f7;
+    /* Purple-500 */
+
+    /* Glass Vars */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-blur: 12px;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #050505;
+    --md-code-bg-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background: radial-gradient(circle at top center, #111827 0%, #000000 100%);
+    background-attachment: fixed;
+}
+
+/* Header Glass */
+.md-header {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Content Cards Glass */
+.md-content__inner {
+    background: transparent;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.md-typeset {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tabs Styling */
+.md-tabs {
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Sidebar Glass */
+.md-sidebar__scrollwrap {
+    background: transparent;
+}
+
+/* Code Blocks */
+.md-typeset pre>code {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+    border-radius: 12px;
+}
