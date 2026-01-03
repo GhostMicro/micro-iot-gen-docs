@@ -19,6 +19,7 @@ nav:
     - การใช้งาน: user-guide/usage.md
     - รายการโมดูล: user-guide/modules.md
   - สำหรับนักพัฒนา:
+    - สถานะโปรเจกต์และ Roadmap: dev-guide/project-status.md
     - โครงสร้างโปรเจกต์: dev-guide/structure.md
     - การเพิ่มโมดูล: dev-guide/add-module.md
     - มาตรฐาน GRIDS-IOT: dev-guide/grids-iot-v1.md
