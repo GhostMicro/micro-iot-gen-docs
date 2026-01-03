@@ -1,0 +1,1091 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="คู่มือการใช้งานและพัฒนาระบบ Micro-IoT Generator">
+      
+      
+        <meta name="author" content="GhostMicro Team">
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>สถานะโปรเจกต์และ Roadmap - Micro-IoT Generator Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-documentation-roadmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Micro-IoT Generator Docs" class="md-header__button md-logo" aria-label="Micro-IoT Generator Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Micro-IoT Generator Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              สถานะโปรเจกต์และ Roadmap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  หน้าแรก
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user-guide/installation.md" class="md-tabs__link">
+          
+  
+  
+  คู่มือผู้ใช้
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  สำหรับนักพัฒนา
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Micro-IoT Generator Docs" class="md-nav__button md-logo" aria-label="Micro-IoT Generator Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Micro-IoT Generator Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    หน้าแรก
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    คู่มือผู้ใช้
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    คู่มือผู้ใช้
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/installation.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    การติดตั้ง
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/usage.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    การใช้งาน
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/modules.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    รายการโมดูล
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    สำหรับนักพัฒนา
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    สำหรับนักพัฒนา
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    สถานะโปรเจกต์และ Roadmap
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    สถานะโปรเจกต์และ Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 เป้าหมายหลัก (Main Objectives)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#achievements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 ผลสำเร็จที่ผ่านมา (Achievements)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-status-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📍 สถานะปัจจุบันและไมล์สโตน (Current Status &amp; Milestones)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📍 สถานะปัจจุบันและไมล์สโตน (Current Status &amp; Milestones)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#milestone-1-zero-editor-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Milestone 1: Zero-Editor Installation (เสร็จสมบูรณ์ 🏁)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milestone-2-modular-generator-refactor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Milestone 2: Modular Generator Refactor (กำลังดำเนินการ 🚧)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milestone-3-full-catalog-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Milestone 3: Full Catalog Support (เร็วๆ นี้ 🔜)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠 ขั้นตอนและแผนการทำงาน (Operational Steps)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠 ขั้นตอนและแผนการทำงาน (Operational Steps)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ระยะสั้น (Next Steps)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ระยะยาว
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-conversation-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 บันทึกการสื่อสารที่สำคัญสั้นๆ (Key Conversation Recap)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-brief" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗 โครงสร้างสถาปัตยกรรม (Architecture Brief)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    โครงสร้างโปรเจกต์
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add-module.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    การเพิ่มโมดูล
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grids-iot-v1.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    มาตรฐาน GRIDS-IOT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 เป้าหมายหลัก (Main Objectives)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#achievements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 ผลสำเร็จที่ผ่านมา (Achievements)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-status-milestones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📍 สถานะปัจจุบันและไมล์สโตน (Current Status &amp; Milestones)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📍 สถานะปัจจุบันและไมล์สโตน (Current Status &amp; Milestones)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#milestone-1-zero-editor-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Milestone 1: Zero-Editor Installation (เสร็จสมบูรณ์ 🏁)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milestone-2-modular-generator-refactor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Milestone 2: Modular Generator Refactor (กำลังดำเนินการ 🚧)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milestone-3-full-catalog-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Milestone 3: Full Catalog Support (เร็วๆ นี้ 🔜)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠 ขั้นตอนและแผนการทำงาน (Operational Steps)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠 ขั้นตอนและแผนการทำงาน (Operational Steps)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ระยะสั้น (Next Steps)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ระยะยาว
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-conversation-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💬 บันทึกการสื่อสารที่สำคัญสั้นๆ (Key Conversation Recap)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-brief" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗 โครงสร้างสถาปัตยกรรม (Architecture Brief)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="project-documentation-roadmap">รายงานความคืบหน้าโปรเจกต์ (Project Documentation &amp; Roadmap)</h1>
+<p>เอกสารนี้สรุปขั้นตอนการทำงาน ผลสำเร็จ และแผนการดำเนินงานสำหรับทีมงานเพื่อใช้ในการพัฒนาต่อ</p>
+<h2 id="main-objectives">🎯 เป้าหมายหลัก (Main Objectives)</h2>
+<ol>
+<li><strong>Easy Adoption</strong>: ทำให้ผู้ใช้ทั่วไป (Non-Technical) สามารถติดตั้งและใช้งานโปรแกรมได้โดยไม่ต้องมี Editor หรือความรู้ด้านการเขียนโค้ด</li>
+<li><strong>Modular Generator</strong>: พัฒนาตัวสร้างโค้ด (Code Generator) ให้รองรับโมดูลที่หลากหลายแบบอัตโนมัติ 100%</li>
+<li><strong>High-Fidelity Dashboard</strong>: สร้างเครื่องมือที่ช่วยให้การออกแบบ IoT Node เป็นเรื่องง่ายและดูเป็นมืออาชีพ</li>
+</ol>
+<hr />
+<h2 id="achievements">🚀 ผลสำเร็จที่ผ่านมา (Achievements)</h2>
+<ul>
+<li>[x] <strong>One-Click Installer</strong>: สร้างไฟล์ <code>install.bat</code> ที่ตรวจสอบและติดตั้ง Node.js ให้อัตโนมัติผ่าน <code>winget</code></li>
+<li>[x] <strong>Smart Launcher</strong>: สร้างไฟล์ <code>start.bat</code> สำหรับเริ่มทำงานโปรแกรมในคลิกเดียว</li>
+<li>[x] <strong>User Guide (TH)</strong>: จัดทำคู่มือการใช้งานเบื้องต้นภาษาไทยสำหรับผู้ใช้ทั่วไป</li>
+<li>[x] <strong>Core Logic Analysis</strong>: ตรวจสอบและวิเคราะห์โครงสร้างโค้ด ESP32 ที่ Gen ออกมา (ArduinoJson V7, MQTT LWT, ArduinoOTA)</li>
+<li>[x] <strong>Project Structure mapping</strong>: ระบุตำแหน่งไฟล์สำคัญใน Generator (<code>code-gen.ts</code>, <code>modules.ts</code>, <code>store.ts</code>)</li>
+</ul>
+<hr />
+<h2 id="current-status-milestones">📍 สถานะปัจจุบันและไมล์สโตน (Current Status &amp; Milestones)</h2>
+<h3 id="milestone-1-zero-editor-installation">Milestone 1: Zero-Editor Installation (เสร็จสมบูรณ์ 🏁)</h3>
+<ul>
+<li>ผู้ใช้ไม่ต้องลง VS Code หรือเรียกใช้ Terminal เอง</li>
+<li>มีสคริปต์จัดการ Dependency และ Env อัตโนมัติ</li>
+</ul>
+<h3 id="milestone-2-modular-generator-refactor">Milestone 2: Modular Generator Refactor (กำลังดำเนินการ 🚧)</h3>
+<ul>
+<li>เป้าหมาย: เปลี่ยนจากการเขียนโค้ดแบบ Hard-coded เป็น Template-based</li>
+<li>ไฟล์ที่เกี่ยวข้อง: <code>lib/generator/code-gen.ts</code>, <code>data/modules.ts</code></li>
+</ul>
+<h3 id="milestone-3-full-catalog-support">Milestone 3: Full Catalog Support (เร็วๆ นี้ 🔜)</h3>
+<ul>
+<li>เพิ่มตรรกะให้โมดูล: PZEM-004T, RC522, Displays, Servo</li>
+</ul>
+<hr />
+<h2 id="operational-steps">🛠 ขั้นตอนและแผนการทำงาน (Operational Steps)</h2>
+<h3 id="next-steps">ระยะสั้น (Next Steps)</h3>
+<ol>
+<li><strong>Refactor <code>modules.ts</code></strong>: เพิ่มฟิลด์ <code>telemetryCode</code> และ <code>commandCode</code> เพื่อแยกตรรกะออกจาก Core Generator</li>
+<li><strong>Update <code>code-gen.ts</code></strong>: แก้ไขฟังก์ชัน <code>generateArduinoCode</code> ให้ดึงตรรกะจากแต่ละโมดูลมาประกอบร่างกัน</li>
+<li><strong>UI Refresh</strong>: ปรับปรุงหน้าจอ <code>BoardView</code> และ <code>Sidebar</code> ให้เป็นแบบ Glassmorphism</li>
+</ol>
+<h3 id="_1">ระยะยาว</h3>
+<ul>
+<li>พัฒนา App สำหรับ Monitor ข้อมูลที่ Gen ออกมาได้ทันที</li>
+<li>ระบบ GhostPass Identity Verification แบบเต็มรูปแบบ</li>
+</ul>
+<hr />
+<h2 id="key-conversation-recap">💬 บันทึกการสื่อสารที่สำคัญสั้นๆ (Key Conversation Recap)</h2>
+<ul>
+<li><strong>User Requirement</strong>: ต้องการให้คนโหลดไปใช้แล้วติดตั้งง่าย "แบบไม่มี Editor"</li>
+<li><strong>Solution Choice</strong>: ใช้ไฟล์ <code>.bat</code> แทน <code>.exe</code> ในช่วงเริ่มต้น เพื่อความยืดหยุ่นในการอัปเดตและลูกค้าสามารถตรวจสอบโค้ดได้ (Transparency)</li>
+<li><strong>Technical Feedback</strong>: ยืนยันว่าโค้ดที่ Gen ออกมาต้องรองรับ ArduinoOTA เพื่อการอัปเดตที่สะดวกในอนาคต</li>
+</ul>
+<hr />
+<h2 id="architecture-brief">🏗 โครงสร้างสถาปัตยกรรม (Architecture Brief)</h2>
+<ul>
+<li><strong>Frontend</strong>: Next.js (App Router), TailwindCSS, Framer Motion</li>
+<li><strong>State Management</strong>: Zustand (<code>lib/store.ts</code>)</li>
+<li><strong>Generator Core</strong>: <code>lib/generator/code-gen.ts</code></li>
+<li><strong>Pin Management</strong>: <code>lib/hardware/pin-allocator.ts</code> (ระบบป้องกันการใช้ Pin ซ้ำซ้อน)</li>
+</ul>
+<hr />
+<p><em>บันทึกเมื่อ: 2026-01-03 โดย Antigravity (AI Coding Assistant)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
