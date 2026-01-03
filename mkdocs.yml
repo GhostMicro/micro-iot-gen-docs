@@ -1,0 +1,24 @@
+site_name: Micro-IoT Generator Docs
+site_description: คู่มือการใช้งานและพัฒนาระบบ Micro-IoT Generator
+site_author: GhostMicro Team
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: cyan
+    accent: purple
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - หน้าแรก: index.md
+  - คู่มือผู้ใช้:
+    - การติดตั้ง: user-guide/installation.md
+    - การใช้งาน: user-guide/usage.md
+    - รายการโมดูล: user-guide/modules.md
+  - สำหรับนักพัฒนา:
+    - โครงสร้างโปรเจกต์: dev-guide/structure.md
+    - การเพิ่มโมดูล: dev-guide/add-module.md
+    - มาตรฐาน GRIDS-IOT: dev-guide/grids-iot-v1.md
